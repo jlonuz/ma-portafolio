@@ -1,0 +1,20 @@
+.ma {
+    font-family: 'Quesha';
+    font-size: 40px;;
+}
+/* 
+.home-video {
+    background-image: url('../video/home.mp4');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 300px;
+} */
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+}

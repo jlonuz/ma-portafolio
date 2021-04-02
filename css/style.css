@@ -1,20 +1,93 @@
+body {
+    font-family: courier;
+}
+
 .ma {
     font-family: 'Quesha';
-    font-size: 40px;;
+    font-size: 40px;
 }
-/* 
-.home-video {
-    background-image: url('../video/home.mp4');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 
-    height: 300px;
-} */
-
-video {
+/* video {
     min-width: 100%;
     min-height: 100%;
     width: 100%;
     height: auto;
+    max-height: 500px;
+} */
+video {
+/* object-fit: cover; */
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav-logo {
+    display: block;
+    max-width: 5rem;
+    margin-top: 0.2rem;
+    padding: 0.2rem;
+}
+
+
+nav {
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1rem;
+    z-index:2;
+}
+
+.navbar-toggler {
+    display:flex;
+}
+
+.navbar-light .navbar-toggler {
+    outline: none;
+}
+.navbar-brand {
+    margin-right:0;
+    flex-grow: 2;
+}
+.nav-menu {
+    display: none;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    column-gap: 1rem;
+    list-style: none;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.nav_item {
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.nav_item a {
+    color: black;
+    text-decoration: none;
+    transition: 2 ease-in;
+}
+.nav_item:hover a{
+    border-bottom: 1px solid black;
+}
+
+@media (min-width: 50rem) {
+    .nav-menu {
+        display: flex;
+      }
+    .navbar-toggler {
+        display: none;
+    }
+}
+footer {
+    position: fixed;
+    bottom:1rem;
+    right:5rem;
+    font-size: 0.5rem;
 }
